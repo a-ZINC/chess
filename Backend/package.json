@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -k \"tsc -p ./tsconfig.json -w\" \"nodemon ./dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "@types/ws": "^8.5.13",
+    "chess.js": "^1.0.0-beta.8",
+    "uuidv4": "^6.2.13",
+    "ws": "^8.18.0"
+  }
+}
